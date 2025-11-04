@@ -51,7 +51,7 @@ function createTransactionElement(transaction){
 
   li.innerHTML = `
   <span>${transaction.description}</span>
-  <span>${transaction.amount}
+  <span>${formatCurrency(transaction.amount)}
     <button class="delete-btn" onclick="removeTransaction(${transaction.id})">x</button>
   </span>
   `;
